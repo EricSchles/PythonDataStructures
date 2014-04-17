@@ -1,0 +1,18 @@
+>>> 'Python'[1]
+'y'
+>>> "Strings are sequences of characters."[5]
+'g'
+>>> len("wonderful")
+9
+>>> 'Mystery'[:4]
+'Myst'
+>>> 'p' in 'Pinapple'
+True
+>>> 'apple' in 'Pinapple'
+True
+>>> 'pear' in 'Pinapple'
+False
+>>> 'apple' > 'pinapple'
+False
+>>> 'pinapple' < 'Peach'
+False
