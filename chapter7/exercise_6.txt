@@ -1,0 +1,9 @@
+the third function is the fastest:
+
+namely:
+
+'a' <= ch <= 'z'
+
+This is because you are only doing two comparisons whereas with all the others you are doing a for loop.
+
+The first method is obviously the slowest.  The second one is slightly faster.
