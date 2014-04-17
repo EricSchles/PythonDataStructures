@@ -1,40 +1,24 @@
-import math
-def is_prime(n):
+def num_digits(n):
     """
-    >>> is_prime(1)
-    False
-    >>> is_prime(2)
-    True
-    >>> is_prime(3)
-    True
-    >>> is_prime(4)
-    False
-    >>> is_prime(5)
-    True
-    >>> is_prime(6)
-    False
-    >>> is_prime(7)
-    True
-    >>> is_prime(8)
-    False
-    >>> is_prime(9)
-    False
-    >>> is_prime(10)
-    False
-    >>> is_prime(12)
-    False
-    >>> is_prime(13)
-    True
+    >>> num_digits(12345)
+    5
+    >>> num_digits(0)
+    1
+    >>> num_digits(-12345)
+    5
+    >>> num_digits(2)
+    1
+    >>> num_digits(24)
+    2
     """
-    sqrt_n = int(math.sqrt(n))
-    if n == 1:
-        return False
-    i = 2
-    while i <= sqrt_n:
-        if n%i == 0:
-            return False
-        i += 1
-    return True
+    if n == 0:
+        return 1
+    count = 0
+    n = abs(n)
+    while n:
+        count = count + 1
+        n = n / 10
+    return count
 
 if __name__ == '__main__':
     import doctest
