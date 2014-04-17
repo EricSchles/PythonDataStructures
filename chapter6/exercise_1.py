@@ -1,0 +1,5 @@
+"""
+produces 
+this
+output.
+"""
