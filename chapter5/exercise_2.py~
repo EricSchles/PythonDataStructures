@@ -1,0 +1,6 @@
+import math
+def hypotenuse(a,b):
+    if type(a) == type(int()) or type(a) == type(float()) and type(b) == type(int()) or type(b) == type(float()):
+        return math.sqrt(a**2 + b**2)
+    else:
+        return "distance function undefined for associated types!!"

@@ -1,0 +1,4 @@
+print """produces
+this
+output.
+"""

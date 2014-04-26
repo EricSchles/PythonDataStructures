@@ -1,0 +1,5 @@
+from gasp import *
+
+begin_graphics()
+
+Polygon((10,15,10))
